@@ -1,0 +1,146 @@
+/*
+    Color palette used throughout the website:
+    Navy blue:       #152f4f
+    Warm cream:      #f6f3ee
+    White:           #ffffff
+    Light blue:      #e8f4f8
+    Gold:            #ffd27a
+    Dark red:        #8a2d2d
+    Dark green:      #315c2b
+    Medium gray:     #666666
+
+    Main fonts:
+    Verdana and Arial for the page
+    Georgia, Trebuchet MS, and Times New Roman for paragraph variety
+*/
+
+/* General style for all four pages */
+body {
+    background-color: #f6f3ee;
+    color: #252525;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header and navigation style */
+header {
+    background-color: #152f4f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.subtitle {
+    color: #dcebf7;
+    font-style: italic;
+}
+
+nav a {
+    color: #ffd27a;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+/* Main content and image style */
+main {
+    background-color: white;
+    margin: 25px auto;
+    max-width: 800px;
+    padding: 25px;
+    box-shadow: 0 2px 8px #bbbbbb;
+}
+
+main img {
+    border: 3px solid #152f4f;
+    display: block;
+    height: auto;
+    margin: 0 auto 5px;
+    max-width: 100%;
+}
+
+.image-caption {
+    color: #666666;
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Each paragraph has a different font, color, or background. */
+.paragraph-one {
+    color: #8a2d2d;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.paragraph-two {
+    background-color: #e8f4f8;
+    color: #174f6b;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 17px;
+    padding: 12px;
+}
+
+.paragraph-three {
+    border-left: 5px solid #4f7d45;
+    color: #315c2b;
+    font-family: "Times New Roman", serif;
+    font-size: 17px;
+    font-style: italic;
+    padding-left: 12px;
+}
+
+/* List and section spacing */
+section {
+    margin-top: 30px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Table style */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #555555;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #17324d;
+    color: white;
+}
+
+/* Footer style */
+footer {
+    background-color: #152f4f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Social media links on the About page */
+.social-links {
+    background-color: #f6f3ee;
+    border: 1px solid #ffd27a;
+    padding: 15px;
+}
+
+.social-links a {
+    color: #152f4f;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #8a2d2d;
+}
