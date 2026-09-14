@@ -144,3 +144,108 @@ footer {
 .social-links a:hover {
     color: #8a2d2d;
 }
+/* =========================================================
+   ABOUT PAGE FLEXBOX LAYOUT
+
+   Flexbox is used here to organize the navigation and
+   the main content of the About page.
+   ========================================================= */
+
+
+/* Places the title and navigation beside each other */
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+}
+
+
+/* Displays the navigation links horizontally */
+.about-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* Keeps navigation links easy to read */
+.about-nav a {
+    text-decoration: none;
+}
+
+
+/*
+   Main Flexbox layout.
+   The About content takes most of the page while
+   the social media section appears as a sidebar.
+*/
+.about-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+
+    max-width: 1000px;
+}
+
+
+/* Main content takes more space than the sidebar */
+.about-content {
+    flex: 2;
+    margin-top: 0;
+}
+
+
+/* Sidebar takes the smaller portion of the layout */
+.about-sidebar {
+    flex: 1;
+
+    background-color: #f6f3ee;
+    border: 1px solid #ffd27a;
+    padding: 20px;
+
+    margin-top: 0;
+}
+
+
+/* Displays each sidebar link on its own line */
+.about-sidebar a {
+    display: block;
+    color: #152f4f;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+
+/* Changes link color when the mouse is over it */
+.about-sidebar a:hover {
+    color: #8a2d2d;
+}
+
+
+/*
+   Responsive layout:
+   On smaller screens, Flexbox changes the sections
+   from side-by-side to a vertical layout.
+*/
+@media (max-width: 700px) {
+
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-layout {
+        flex-direction: column;
+    }
+
+    .about-sidebar {
+        width: 100%;
+    }
+}

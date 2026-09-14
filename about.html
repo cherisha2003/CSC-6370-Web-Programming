@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Basic page setup and link to the external CSS file -->
+    <!-- Basic page setup and connection to the external stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Atlanta - About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Header and navigation links to every page in the website -->
-    <header>
-        <h1>About Explore Atlanta</h1>
-        <p class="subtitle">Why I decided to create this website</p>
-        <nav>
-            <a href="index.html">Home</a><br>
-            <a href="attractions.html">Attractions</a><br>
-            <a href="food.html">Food</a><br>
+
+<body class="about-page">
+
+    <!-- Header contains the website title and navigation -->
+    <header class="about-header">
+
+        <!-- Website title -->
+        <div class="header-text">
+            <h1>About Explore Atlanta</h1>
+            <p class="subtitle">Why I decided to create this website</p>
+        </div>
+
+        <!-- Navigation links -->
+        <nav class="about-nav">
+            <a href="index.html">Home</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="food.html">Food</a>
             <a href="about.html">About</a>
         </nav>
+
     </header>
 
-    <!-- Main section explaining the purpose and motivation for the website -->
-    <main>
-        <p class="paragraph-one">
-            My name is Cherisha Killari Giribabu, and I created Explore Atlanta as a simple guide to a city that has become an important part of my life. I moved to Atlanta to attend Georgia State University for my master's degree, so I wanted my website to focus on a place I am currently getting to know.
-        </p>
 
-        <p class="paragraph-two">
-            I chose this topic because Atlanta has many different sides to it. The city has well-known attractions, outdoor spaces, history, and food from many cultures. Building this website gave me a chance to share a few of the places and experiences that stood out to me while also practicing HTML and CSS.
-        </p>
+    <!--
+        Flexbox layout:
+        The main information is on the left and
+        the Connect With Me section is on the right.
+    -->
+    <main class="about-layout">
 
-        <p class="paragraph-three">
-            My motivation was to create something useful for another student or visitor who may be new to the city. I wanted the pages to be easy to read and navigate, with information that helps someone decide what to see or eat. As I explore more of Atlanta, I can continue adding new places and recommendations to the website.
-        </p>
+        <!-- Main About content -->
+        <section class="about-content">
 
-        <!-- Links to my professional social media pages -->
-        <section class="social-links">
-            <h2>Connect With Me</h2>
-            <p>
-                <a href="https://github.com/cherisha2003" target="_blank" rel="noopener noreferrer">My GitHub Profile</a><br>
-                <a href="https://www.linkedin.com/in/cherishakg" target="_blank" rel="noopener noreferrer">My LinkedIn Profile</a>
+            <h2>About This Website</h2>
+
+            <p class="paragraph-one">
+                My name is Cherisha Killari Giribabu, and I created Explore Atlanta
+                as a simple guide to a city that has become an important part of my
+                life. I moved to Atlanta to attend Georgia State University for my
+                master's degree, so I wanted my website to focus on a place I am
+                currently getting to know.
             </p>
+
+            <p class="paragraph-two">
+                I chose this topic because Atlanta has many different sides to it.
+                The city has well-known attractions, outdoor spaces, history, and
+                food from many cultures. Building this website gave me a chance to
+                share a few of the places and experiences that stood out to me while
+                also practicing HTML and CSS.
+            </p>
+
+            <p class="paragraph-three">
+                My motivation was to create something useful for another student or
+                visitor who may be new to the city. I wanted the pages to be easy
+                to read and navigate, with information that helps someone decide
+                what to see or eat. As I explore more of Atlanta, I can continue
+                adding new places and recommendations to the website.
+            </p>
+
         </section>
+
+
+        <!-- Side content for social media links -->
+        <aside class="about-sidebar">
+
+            <h2>Connect With Me</h2>
+
+            <p>
+                You can also find some of my projects and professional
+                information here.
+            </p>
+
+            <a href="https://github.com/cherisha2003"
+               target="_blank"
+               rel="noopener noreferrer">
+                My GitHub Profile
+            </a>
+
+            <a href="https://www.linkedin.com/in/cherishakg"
+               target="_blank"
+               rel="noopener noreferrer">
+                My LinkedIn Profile
+            </a>
+
+        </aside>
+
     </main>
+
 
     <!-- Footer with my name and course -->
     <footer>
         <p>Created by Cherisha Killari Giribabu | CSC 6370</p>
     </footer>
+
 </body>
 </html>
